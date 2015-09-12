@@ -47,14 +47,14 @@ which means you can modify it, redistribute it or use it however you like.
     youtube-dl [OPTIONS] URL [URL...]
 
 # 参数
-    -h, --help                       Print this help text and exit
-    --version                        Print program version and exit
-    -U, --update                     Update this program to latest version. Make sure that you have sufficient permissions (run with sudo if needed)
-    -i, --ignore-errors              Continue on download errors, for example to skip unavailable videos in a playlist
+    -h, --help                       打印帮助文档并退出
+    --version                        打印程序版本并退出
+    -U, --update                     更新程序到最新版本。确定是否拥有足够的权限（必要时，需要sudo运行）
+    -i, --ignore-errors              忽略错误继续下载, 例如：在视频列表中，跳过不可用的视频
     --abort-on-error                 Abort downloading of further videos (in the playlist or the command line) if an error occurs
     --dump-user-agent                Display the current browser identification
-    --list-extractors                List all supported extractors
-    --extractor-descriptions         Output descriptions of all supported extractors
+    --list-extractors                列出所有支持的平台
+    --extractor-descriptions         输入所支持平台的描述信息
     --force-generic-extractor        Force extraction to use the generic extractor
     --default-search PREFIX          Use this prefix for unqualified URLs. For example "gvsearch2:" downloads two videos from google videos for youtube-dl "large apple".
                                      Use the value "auto" to let youtube-dl guess ("auto_warning" to emit a warning when guessing). "error" just throws an error. The
@@ -64,9 +64,9 @@ which means you can modify it, redistribute it or use it however you like.
     --flat-playlist                  Do not extract the videos of a playlist, only list them.
     --no-color                       Do not emit color codes in output
 
-## Network Options:
-    --proxy URL                      Use the specified HTTP/HTTPS proxy. Pass in an empty string (--proxy "") for direct connection
-    --socket-timeout SECONDS         Time to wait before giving up, in seconds
+## 网络选项:
+    --proxy URL                      使用指定的HTTP/HTTPS代理。传入一个空得字符串(--proxy "")则直接连接
+    --socket-timeout SECONDS         设置超时时间（秒数）
     --source-address IP              Client-side IP address to bind to (experimental)
     -4, --force-ipv4                 Make all connections via IPv4 (experimental)
     -6, --force-ipv6                 Make all connections via IPv6 (experimental)
