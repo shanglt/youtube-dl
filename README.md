@@ -1,6 +1,6 @@
 youtube-dl - download videos from youtube.com or other video platforms
 
-- [INSTALLATION](#installation)
+- [安装](#installation)
 - [DESCRIPTION](#description)
 - [OPTIONS](#options)
 - [CONFIGURATION](#configuration)
