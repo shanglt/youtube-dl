@@ -1,9 +1,9 @@
 youtube-dl - download videos from youtube.com or other video platforms
 
-- [安装](#installation)
-- [DESCRIPTION](#description)
-- [OPTIONS](#options)
-- [CONFIGURATION](#configuration)
+- [安装](#安装)
+- [描述](#描述)
+- [参数](#参数)
+- [配置](#配置)
 - [OUTPUT TEMPLATE](#output-template)
 - [FORMAT SELECTION](#format-selection)
 - [VIDEO SELECTION](#video-selection)
@@ -12,40 +12,41 @@ youtube-dl - download videos from youtube.com or other video platforms
 - [BUGS](#bugs)
 - [COPYRIGHT](#copyright)
 
-# INSTALLATION
+# 安装
 
-To install it right away for all UNIX users (Linux, OS X, etc.), type:
+UNIX（Linux, OS X, etc.）用户快速安装，输入：
 
     sudo curl https://yt-dl.org/latest/youtube-dl -o /usr/local/bin/youtube-dl
     sudo chmod a+rx /usr/local/bin/youtube-dl
 
-If you do not have curl, you can alternatively use a recent wget:
+如果你没有curl，你也可以使用最新版的wget：
 
     sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
     sudo chmod a+rx /usr/local/bin/youtube-dl
 
-Windows users can [download a .exe file](https://yt-dl.org/latest/youtube-dl.exe) and place it in their home directory or any other location on their [PATH](http://en.wikipedia.org/wiki/PATH_%28variable%29).
+Windows用户可以[下载.exe文件](https://yt-dl.org/latest/youtube-dl.exe)，并将该文件放到Home目录或者其他本地[PATH](http://en.wikipedia.org/wiki/PATH_%28variable%29).
 
-OS X users can install **youtube-dl** with [Homebrew](http://brew.sh/).
+OS X 用户可以使用[Homebrew](http://brew.sh/)来安装**youtube-dl**.
 
     brew install youtube-dl
 
-You can also use pip:
+也可以使用pip:
 
     sudo pip install youtube-dl
 
-Alternatively, refer to the [developer instructions](#developer-instructions) for how to check out and work with the git repository. For further options, including PGP signatures, see https://rg3.github.io/youtube-dl/download.html .
+或者，进入[developer instructions](#developer-instructions)页面检出git仓库。更多信息，包括PGP签名，请看https://rg3.github.io/youtube-dl/download.html .
 
-# DESCRIPTION
-**youtube-dl** is a small command-line program to download videos from
-YouTube.com and a few more sites. It requires the Python interpreter, version
-2.6, 2.7, or 3.2+, and it is not platform specific. It should work on
-your Unix box, on Windows or on Mac OS X. It is released to the public domain,
+# 描述
+**youtube-dl** 是一个从youtube.com等平台下载视频的命令行工具。
+它需要Python解析器，版本2.6，2.7或3.2+，但并无平台限制。
+youtube-dl可以运行在Unix，Windows或Mac OS X上。
+youtube-dl公布开源意味着你可以任意修改它。
+ It is released to the public domain,
 which means you can modify it, redistribute it or use it however you like.
 
     youtube-dl [OPTIONS] URL [URL...]
 
-# OPTIONS
+# 参数
     -h, --help                       Print this help text and exit
     --version                        Print program version and exit
     -U, --update                     Update this program to latest version. Make sure that you have sufficient permissions (run with sudo if needed)
